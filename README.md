@@ -6,7 +6,7 @@ I'm having a problem with finding total 6-hourly precipitation on the CDS API wh
     2. Make a uv project dir: `mkdir E2S && cd E2S`
     3. If you don't have uv installed (skip step otherwise): `curl -LsSf https://astral.sh/uv/install.sh | sh`
     4. `uv init --python=3.12`
-    5. `uv add "earth2studio @ git+https://github.com/Joshua-Elms/earth2studio-cu126.git" --extra sfno pangu fuxi graphcast` (This is a fork of E2S from only a few days ago, so it's up-to-date... it solves a weird problem with the original version demanding cuda 12.8, whereas Quartz is on cuda 12.6. Shouldn't affect CDS API at all.)
+    5. `uv add "earth2studio @ git+https://github.com/Joshua-Elms/earth2studio-cu126.git" --extra sfno --extra pangu --extra fuxi --extra graphcast` (This is a fork of E2S from only a few days ago, so it's up-to-date... it solves a weird problem with the original version demanding cuda 12.8, whereas Quartz is on cuda 12.6. Shouldn't affect CDS API at all.)
     6. `uv pip install cdsapi dotenv`
     7. `source .venv/bin/activate; cd ..`
     8. `srun -p gpu-debug -A r00389 --mem=64GB --time=01:00:00 --gpus-per-node v100:1 --pty bash`
