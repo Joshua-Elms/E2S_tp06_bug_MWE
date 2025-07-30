@@ -16,9 +16,9 @@ I'm having a problem with finding total 6-hourly precipitation on the CDS API wh
 
 Each model (SFNO, Pangu6, GraphCastOperational, and FuXi) will load and run, and if they are unsuccessful, produce error messages that are caught and printed. The one I'm targeting is:
 
-"""
+```
 2025-07-30 13:38:32.014 | ERROR    | earth2studio.data.cds:_build_requests:255 - variable id tp06 not found in CDS lexicon
         Error encountered while running fuxi model: np.str_('tp06')
-"""
+```
 
 Pangu has an OOM error that goes away if you run it before the other models, and SFNO seems to do fine. 
