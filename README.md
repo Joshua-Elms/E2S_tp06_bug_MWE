@@ -11,6 +11,7 @@ I'm having a problem with finding total 6-hourly precipitation on the CDS API wh
     7. `source .venv/bin/activate; cd ..`
     8. `srun -p gpu-debug -A r00389 --mem=64GB --time=01:00:00 --gpus-per-node v100:1 --pty bash`
     9. Set cache location for model weights: `mkdir /N/slate/$USER/.E2S_cache;echo EARTH2STUDIO_CACHE=/N/slate/$USER/.E2S_cache > .env`
+    10. If you haven't already, set up your CDS API account here: https://cds.climate.copernicus.eu/how-to-api
 2. Run script: `python bug_generator.py`
 
 Each model (SFNO, Pangu6, GraphCastOperational, and FuXi) will load and run, and if they are unsuccessful, produce error messages that are caught and printed. The one I'm targeting is:
