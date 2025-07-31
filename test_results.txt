@@ -1,0 +1,12 @@
+fuxi-cds: Failed w/ error "np.str_('tp06')"
+fuxi-arco: Failed w/ error "np.str_('r300')"
+fuxi-gfs: Passed
+graphcast-cds: Failed w/ error "np.str_('tp06')"
+graphcast-arco: Failed w/ error "np.str_('tp06')"
+graphcast-gfs: Passed
+pangu-cds: Passed
+pangu-arco: Passed
+pangu-gfs: Passed
+sfno-cds: Passed
+sfno-arco: Passed
+sfno-gfs: Passed
